@@ -1,0 +1,49 @@
+2018-05-29 22:05:32,791 DEBUG No configuration found at `/home/hitochan/developer/docker-utility/.pyre_configuration.local`.
+2018-05-29 22:05:32,792 DEBUG No configuration found at `.pyre_configuration.local`.
+2018-05-29 22:05:32,792 DEBUG No configuration found at `.pyre_configuration`.
+2018-05-29 22:05:32,792 INFO No source directory specified, using current directory
+2018-05-29 22:05:32,792 INFO No binary specified, looking for `pyre.bin` in PATH
+2018-05-29 22:05:32,792 INFO Found: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/bin/pyre.bin`
+2018-05-29 22:05:32,793 INFO No typeshed specified, looking for it
+2018-05-29 22:05:32,793 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/python3.6/site-packages/pyre_check/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:32,793 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/python3.6/site-packages/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:32,793 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/python3.6/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:32,793 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:32,793 INFO Found: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:32,794 WARNING Server not running at `.`. Starting...
+
+2018-05-29 22:05:32,794 DEBUG Running `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/bin/pyre.bin start -project-root /home/hitochan/developer/docker-utility -use-watchman -workers 1 -search-path /home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/ -version None .`
+2018-05-29 22:05:32,811 INFO Starting up server...
+2018-05-29 22:05:32,812 INFO Spawning the watchman daemon now.
+2018-05-29 22:05:32,816 WARNING Server initializing...
+
+2018-05-29 22:05:32,816 DEBUG Running `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/bin/pyre.bin incremental -project-root /home/hitochan/developer/docker-utility -search-path /home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/ -version None .`
+2018-05-29 22:05:32,916 INFO Watchman daemon pid: 13039
+2018-05-29 22:05:32,962 INFO Server running as pid 13041
+2018-05-29 22:05:33,551 ERROR Found 1 type error!
+
+2018-05-29 22:05:51,611 DEBUG No configuration found at `/home/hitochan/developer/docker-utility/.pyre_configuration.local`.
+2018-05-29 22:05:51,612 DEBUG No configuration found at `.pyre_configuration.local`.
+2018-05-29 22:05:51,612 DEBUG No configuration found at `.pyre_configuration`.
+2018-05-29 22:05:51,612 INFO No source directory specified, using current directory
+2018-05-29 22:05:51,612 INFO No binary specified, looking for `pyre.bin` in PATH
+2018-05-29 22:05:51,612 INFO Found: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/bin/pyre.bin`
+2018-05-29 22:05:51,613 INFO No typeshed specified, looking for it
+2018-05-29 22:05:51,613 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/python3.6/site-packages/pyre_check/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:51,613 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/python3.6/site-packages/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:51,613 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/python3.6/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:51,613 DEBUG Trying with: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:51,613 INFO Found: `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/`
+2018-05-29 22:05:51,614 INFO Waiting for server...
+2018-05-29 22:05:51,614 DEBUG Running `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/bin/pyre.bin incremental -project-root /home/hitochan/developer/docker-utility -search-path /home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib/ -version None .`
+2018-05-29 22:05:51,620 INFO Finding type stubs in `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib`...
+2018-05-29 22:05:51,620 INFO Finding external sources in `/home/hitochan/.local/share/virtualenvs/docker-utility-7uyD43nn/lib/pyre_check/typeshed/stdlib`...
+2018-05-29 22:05:51,620 INFO Parsing 346 stubs and external sources...
+2018-05-29 22:05:51,621 INFO Parsing 2 sources in `/home/hitochan/developer/docker-utility`...
+2018-05-29 22:05:51,621 INFO Unable to parse 1 paths
+2018-05-29 22:05:51,621 INFO Building type environment...
+2018-05-29 22:05:51,621 INFO Adding environment information to shared memory...
+2018-05-29 22:05:51,622 INFO Inferring protocol implementations...
+2018-05-29 22:05:51,622 INFO Checking...
+2018-05-29 22:05:51,673 ERROR Found 1 type error!
+
