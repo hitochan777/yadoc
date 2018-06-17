@@ -5,9 +5,14 @@ name = "pypi"
 
 [dev-packages]
 pyre-check = "*"
+"flake8" = "*"
 
 [packages]
 requests = "*"
 
 [requires]
 python_version = "3.6"
+
+[scripts]
+lint = "flake8"
+
