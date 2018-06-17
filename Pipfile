@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-pyre-check = "*"
 "flake8" = "*"
+mypy = "*"
 
 [packages]
 requests = "*"
@@ -15,4 +15,4 @@ python_version = "3.6"
 
 [scripts]
 lint = "flake8"
-
+type-check = "mypy ."
