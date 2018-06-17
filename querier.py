@@ -15,7 +15,7 @@ def get_auth_info(host: str) -> Tuple[str, Dict[str, str]]:
         )
     )
     assert("realm" in params)
-    return scheme, params, 1
+    return scheme, params
 
 
 def get_token(host: str, scope: str) -> str:
