@@ -9,6 +9,7 @@ mypy = "*"
 
 [packages]
 requests = "*"
+semantic-version = "*"
 
 [requires]
 python_version = "3.6"
