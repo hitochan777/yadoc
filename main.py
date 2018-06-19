@@ -10,7 +10,10 @@ if __name__ == "__main__":
         default="registry-1.docker.io",
         help="Host name of the registry"
     )
-    subparsers = parser.add_subparsers(help='List of subcommands', dest="subcommand_name")
+    subparsers = parser.add_subparsers(
+        help='List of subcommands',
+        dest="subcommand_name"
+    )
 
     parser_tag = subparsers.add_parser('tag', help='tag help')
     parser_tag.add_argument(
