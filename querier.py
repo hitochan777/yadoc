@@ -61,4 +61,4 @@ def list_tags(host: str, name: str, limit: int=None) -> List[str]:
         )
 
     body = json.loads(r.text)
-    return body["tags"]
+    return sort_tags(body["tags"])[:limit]

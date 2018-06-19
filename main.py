@@ -20,11 +20,17 @@ if __name__ == "__main__":
         'name',
         help="name of a docker image including repository name"
     )
+    parser_tag.add_argument(
+        '-l', '--limit',
+        type=int,
+        default=None,
+        help="Number of tags to print"
+    )
 
     args = parser.parse_args()
 
     if args.subcommand_name == "tag":
-        tags = querier.list_tags(args.registry, args.name)
+        tags = querier.list_tags(args.registry, args.name, args.limit)
         for tag in tags:
             print(tag)
 
