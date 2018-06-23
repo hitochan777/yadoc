@@ -1,4 +1,7 @@
 # yadoc
+[![wercker status](https://app.wercker.com/status/dfde7a709e3ddec8be88e81717f9bad0/s/master "wercker status")](https://app.wercker.com/project/byKey/dfde7a709e3ddec8be88e81717f9bad0)
+[![codecov](https://codecov.io/gh/hitochan777/yadoc/branch/master/graph/badge.svg)](https://codecov.io/gh/hitochan777/yadoc)
+
 Yet Another Docker CLI
 
 ## Requirements
