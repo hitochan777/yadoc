@@ -1,7 +1,8 @@
 import argparse
-import querier
+from querier import IQuerier, Querier
 
-if __name__ == "__main__":
+
+def parse_cli() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description='Get tags from docker repository'
     )
@@ -26,9 +27,12 @@ if __name__ == "__main__":
         default=None,
         help="Number of tags to print"
     )
-
     args = parser.parse_args()
+    return args
 
+
+def run(querier: IQuerier):
+    args = parse_cli()
     if args.subcommand_name == "tag":
         tags = querier.list_tags(args.registry, args.name, args.limit)
         for tag in tags:
@@ -36,3 +40,7 @@ if __name__ == "__main__":
 
     else:
         raise ValueError(f"Unexpected subcommand {args.subcommand_name}")
+
+
+if __name__ == "__main__":
+    run(Querier())
