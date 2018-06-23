@@ -19,3 +19,4 @@ python_version = "3.6"
 [scripts]
 lint = "flake8"
 type-check = "mypy . --ignore-missing-imports"
+test = "python -m unittest 'src/**/*_test.py'"

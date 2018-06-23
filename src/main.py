@@ -1,5 +1,5 @@
 import argparse
-from querier import IQuerier, Querier
+from .querier import IQuerier, Querier
 
 
 def parse_cli() -> argparse.Namespace:

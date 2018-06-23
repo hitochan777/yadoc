@@ -45,7 +45,7 @@ class Querier(IQuerier):
         )
         return sorted(
             filtered_tags,
-            key=lambda tag: semantic_version.Version(tag, partial=True),
+            key=lambda tag: semantic_version.Version(tag),
             reverse=reverse
         )
 
@@ -71,7 +71,6 @@ class Querier(IQuerier):
             headers=headers
         )
         if r.status_code != 200:
-            print(r.text)
             raise RuntimeError(
                 f'Failed to fetch data. Status code {r.status_code}'
             )
