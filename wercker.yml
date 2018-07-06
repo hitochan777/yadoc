@@ -1,17 +1,13 @@
 box: python:3.7
 build:
   steps:
-    - pip-install
+    - pip-install:
         requiremens_file: ""
         packages_list: "pipenv"
 
     - script:
         name: pipenv install
         code: pipenv install
-
-    # # This pip-install clears the local wheel cache
-    # - pip-install:
-    #     clean_wheel_dir: true
 
     - script:
         name: lint
