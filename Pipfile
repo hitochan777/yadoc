@@ -19,4 +19,4 @@ python_version = "3.7"
 [scripts]
 lint = "flake8"
 type-check = "mypy . --ignore-missing-imports"
-test = "python -m unittest discover"
+test = "coverage run -m unittest discover"
