@@ -45,7 +45,7 @@ class TestQuerier(unittest.TestCase):
         responses.add(**{
             'method': responses.GET,
             'url': 'https://hitochan777.registry.io\
-                   /v2/hitochan777/sample-repo/tags/list',
+/v2/hitochan777/sample-repo/tags/list',
             'json': {
                 'tags': returnedTags
             },
@@ -56,8 +56,7 @@ class TestQuerier(unittest.TestCase):
             'url': 'https://hitochan777.registry.io/v2/',
             'headers': {
                 'WWW-Authenticate': 'Bearer\
-                    realm="https://hitochan777.docker.io/token",\
-                    service="hitochan777.registry.io"'
+ realm="https://hitochan777.docker.io/token",service="hitochan777.registry.io"'
             },
             'status': 200
         })

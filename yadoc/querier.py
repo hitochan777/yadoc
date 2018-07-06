@@ -17,7 +17,7 @@ class Querier(IQuerier):
     def get_auth_info(host: str) -> Tuple[str, Dict[str, str]]:
         r = requests.get(f'https://{host}/v2/')
         www_auth = r.headers['WWW-Authenticate'].split(" ")
-        assert(len(www_auth) == 2)
+        assert len(www_auth) == 2, www_auth
         scheme, params_tmp = www_auth
         params: Dict[str, str] = dict(
             map(
@@ -25,7 +25,7 @@ class Querier(IQuerier):
                 params_tmp.replace("\"", "").split(",")
             )
         )
-        assert("realm" in params)
+        assert "realm" in params, params
         return scheme, params
 
     @staticmethod
@@ -35,7 +35,7 @@ class Querier(IQuerier):
             f'{params["realm"]}?service={params["service"]}&scope={scope}'
         r = requests.get(auth_url)
         body: Dict[str, str] = json.loads(r.text)
-        assert "token" in body
+        assert "token" in body, body
         return body["token"]
 
     @staticmethod
