@@ -2,7 +2,7 @@ box: python:3.7
 build:
   steps:
     - pip-install:
-        requiremens_file: ""
+        requirements_file: ""
         packages_list: "pipenv"
 
     - script:
