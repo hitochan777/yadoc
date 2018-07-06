@@ -7,7 +7,7 @@ build:
 
     - script:
         name: pipenv install
-        code: pipenv install
+        code: pipenv install -d
 
     - script:
         name: lint
