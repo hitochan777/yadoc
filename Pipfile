@@ -8,10 +8,12 @@ name = "pypi"
 mypy = "*"
 coverage = "*"
 responses = "*"
+codecov = "*"
 
 [packages]
 requests = "*"
 semantic-version = "*"
+codecov = "*"
 
 [requires]
 python_version = "3.7"
