@@ -19,8 +19,7 @@ build:
 
     - script:
         name: test
-        code: |
-            pipenv run python -m unittest src/**/*_test.py
+        code: pipenv run test
 
     - script:
         name: coverage
